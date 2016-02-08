@@ -24,4 +24,4 @@ Because the last output is 8 bit, I here use the scale command to make the outpu
 ffmpeg -report -i sample.mov -vf lut=y=clipval:u=clipval:v=clipval -c:v mpeg2video -f nut - | ffmpeg -i - -vf "waveform,drawbox=y=(ih-(16*(ih/256))):w=iw:h=16*(ih/256):color=aqua@0.3:t=16*(ih/256),drawbox=w=iw:h=ih-(235*(ih/256)):color=crimson@0.3:t=16*(ih/256),scale=iw:ih*4" sample_encoded_as_mpeg2video_scaled.gif
 ```
 
-![sample_encoded_as_mpeg2video_scaled_.gif](sample_encoded_as_mpeg2video_scaled_.gif)
+![sample_encoded_as_mpeg2video_scaled.gif](sample_encoded_as_mpeg2video_scaled.gif)
